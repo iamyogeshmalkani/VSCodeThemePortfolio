@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { LiaSearchSolid } from "react-icons/lia"
-import { FILES } from './Constants';
+import { ASSETS, FILES } from './Constants';
 
 export default function SearchBarInput({ setSearchBar, SwitchTabs, show }) {
+
+    var fileInd = 0;
     const [activeIndex, setActiveIndex] = useState(0);
     const [searchText, setSearchText] = useState('');
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === 'ArrowDown') {
-                let newActiveIndex = activeIndex >= FILES.length - 1 ? 0 : activeIndex + 1;
+                let newActiveIndex = activeIndex >= (FILES.length + ASSETS.length) - 1 ? 0 : activeIndex + 1;
                 setActiveIndex(newActiveIndex);
             } else if (event.key === 'ArrowUp') {
-                let newActiveIndex = activeIndex <= 0 ? FILES.length - 1 : activeIndex - 1;
+                let newActiveIndex = activeIndex <= 0 ? (FILES.length + ASSETS.length) - 1 : activeIndex - 1;
                 setActiveIndex(newActiveIndex);
             }
         };
@@ -38,6 +40,7 @@ export default function SearchBarInput({ setSearchBar, SwitchTabs, show }) {
                 <input id='search' autoComplete='off' placeholder='search files by name' value={searchText} onChange={(e) => { setSearchText(e.target.value) }} type='text' className='searchInput text-black p-1.5 border border-blue-500 focus:outline-blue-500 w-full' />
                 <div className='searchContainer mt-2'>
                     {FILES.map((file, ind) => {
+                        fileInd = ind;
                         if (file.toUpperCase().includes(searchText.toUpperCase())) {
                             return (
                                 <p
@@ -55,6 +58,25 @@ export default function SearchBarInput({ setSearchBar, SwitchTabs, show }) {
                             );
                         }
                     })}
+                    {
+                        ASSETS.map((asset, ind) => {
+                            if (asset.toUpperCase().includes(searchText.toUpperCase())) {
+                                return (
+                                    <p
+                                        id={'search' + (ind + fileInd + 1)}
+                                        key={ind}
+                                        data-file={asset}
+                                        onClick={() => { SwitchTabs(asset) }}
+                                        className={`hover:bg-white hover:bg-opacity-10 searchResult text-white text-left  ${activeIndex === (fileInd + ind + 1) ? ' bg-white bg-opacity-10' : ''
+                                            }`
+                                        }
+                                    >
+                                        {asset}
+                                    </p>
+                                );
+                            }
+                        })
+                    }
                 </div>
 
             </div >}

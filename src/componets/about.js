@@ -9,15 +9,12 @@ export default function About({ AboutRef }) {
                     <p className='text-4xl font-bold'>
                         <span className='text-4xl font-bold  border-b-8 border-b-p-300'>About</span> Me</p>
                     <p>
-                        Welcome to my web portfolio! I'm Yogesh Malkani, a passionate B.Tech IT student with a deep interest in software development. Over the past 2 years, I have dedicated myself to web development and have had the opportunity to work with 3 startups, gaining valuable experience and expanding my knowledge in various technologies.
+                        Welcome to my web portfolio! I'm Yogesh Malkani, a passionate B.Tech IT graduate with a deep interest in software development. Over the past 3 years, I have dedicated myself to web development and have had the opportunity to work with 3 startups, gaining valuable experience and expanding my knowledge in various technologies.
                         <br />
                         <br />
 
-                        As a full-stack developer, my tech stack is primarily based on JavaScript, which allows me to seamlessly work on both the front end and back end of web applications. While my strength lies in front-end development, I am continuously striving to enhance my skills in backend technologies.
-                        <br />
-                        <br />
+                        As a full-stack developer, my tech stack is primarily based on JavaScript, which allows me to seamlessly work on both the front end and back end of web applications. While my strength lies in front-end development, I am continuously striving to enhance my skills in backend technologies.Currently, i am exploring android and ios development using flutter and Swift.
 
-                        Throughout my journey, I have embraced new technologies and frameworks, enabling me to create captivating and user-friendly interfaces. My dedication and enthusiasm for learning have been the driving forces behind my growth as a developer.
                     </p>
                 </div>
                 <div className='w-[40%] m-auto max-sm:w-[60%]'>

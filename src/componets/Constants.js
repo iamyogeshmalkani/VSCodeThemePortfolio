@@ -51,7 +51,7 @@ let FILES = [
     "Contact",
 ]
 let ASSETS = [
-    "contactMe.gif",
+    "contact-me.jpeg",
     "logo.ico",
     "Yogesh.jpeg"
 ]

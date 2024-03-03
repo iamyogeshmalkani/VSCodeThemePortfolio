@@ -52,11 +52,13 @@ function App() {
             document.title = 'Yogesh Malkani';
         }
     })
+
     const handleKeyPress = useCallback((event) => {
         if (event.key === 's') {
             setSearchBar(!searchBar)
         }
     })
+
     const handleMouseDown = useCallback((e) => {
         if (e.target.className.length > 0 && (e?.target?.className?.includes('searchResult'))) {
             SwitchTabs(e.target.getAttribute('data-file'));
