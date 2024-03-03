@@ -9,7 +9,7 @@ export default function About({ AboutRef }) {
                     <p className='text-4xl font-bold'>
                         <span className='text-4xl font-bold  border-b-8 border-b-p-300'>About</span> Me</p>
                     <p>
-                        Welcome to my web portfolio! I'm Yogesh Malkani, a passionate B.Tech IT graduate with a deep interest in software development. Over the past 3 years, I have dedicated myself to web development and have had the opportunity to work with 3 startups, gaining valuable experience and expanding my knowledge in various technologies.
+                        Welcome to my web portfolio! I'm Yogesh Malkani, a passionate B.Tech IT graduate with a deep interest in software development. Over the past 3 years, I have dedicated myself to Web and Mobile app development and have had the opportunity to work with 3 startups, gaining valuable experience and expanding my knowledge in various technologies.
                         <br />
                         <br />
 
