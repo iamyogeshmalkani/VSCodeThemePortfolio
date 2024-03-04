@@ -52,7 +52,7 @@ let FILES = [
 ]
 let ASSETS = [
     "contact-me.jpeg",
-    "logo.ico",
+    "VsCodeLogo.ico",
     "Yogesh.jpeg"
 ]
 

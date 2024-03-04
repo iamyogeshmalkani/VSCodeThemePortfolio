@@ -5,13 +5,13 @@ import { BsImage } from 'react-icons/bs'
 
 export default function ActiveTabs({ SwitchTabs, tabs, activeSection, deleteSection }) {
     return (
-        <div className='flex flex-row w-full flex-1 flex-wrap  z-50 max-sm:hidden  '>
+        <div className='flex flex-row flex-wrap  z-50 max-sm:hidden h-fit w-[82vw]'>
             {
                 tabs.map((tab) => {
                     return (
                         <div
                             key={tab}
-                            className={`cursor-pointer gap-2 border-[1%] items-center border border-l-0  border-gray-500 p-2 text-slate-300 flex flex-row  justify-between  ${activeSection === tab ? 'bg-[#1b1b1c] border-b-0  border-t-blue-600' : 'bg-[#141414]'}`}>
+                            className={`cursor-pointer gap-2 border-[1%] items-center border border-l-0  border-gray-500 p-2 text-slate-300 flex flex-row  justify-between  ${activeSection === tab ? 'bg-[#1b1b1c] border-b-0  border-t-blue-600' : 'bg-[#1F2428]'}`}>
                             <div
                                 onClick={() => { SwitchTabs(tab) }}
                                 className='flex flex-row items-center gap-2'>
@@ -22,7 +22,7 @@ export default function ActiveTabs({ SwitchTabs, tabs, activeSection, deleteSect
                         </div>)
                 })
             }
-            <div className='flex-auto border border-b border-gray-500 bg-[#141414]'>
+            <div className='flex-auto border border-b border-gray-500 bg-[#1F2428]'>
             </div>
         </div>
     )

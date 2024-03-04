@@ -1,10 +1,10 @@
 import './App.css';
 import Homepage from './componets/homepage';
-// import Navbar from './componets/navbar';
+// import Explorer from './componets/Explorer';
 import About from './componets/about';
 import Experiences from './componets/experiences';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Navbar from './componets/navbar';
+import Explorer from './componets/explorer';
 import ActiveTabs from './componets/activeTabs';
 import ContactForm from "./componets/contactMe"
 import SearchBarInput from './componets/searchBarInput';
@@ -75,18 +75,21 @@ function App() {
     }, []);
 
     return (
-        <div id='mainDiv' className="App w-full flex flex-col bg-[#1b1b1c] min-h-[100vh]">
-            <Navbar refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />
-            <div className='w-[80%] ml-[18%]  max-sm:w-[100%] flex flex-col max-sm:ml-0  max-sm:overflow-y-scroll'>
-                <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
-                <ActiveTabs SwitchTabs={SwitchTabs} tabs={activeTabs} activeSection={activeSection} deleteSection={deleteSection} />
-                {activeSection === 'Home' && <Homepage SwitchTabs={SwitchTabs} HomeRef={HomeRef} />}
-                {activeSection === 'About' && < About AboutRef={AboutRef} />}
-                {activeSection === 'ExperienceAndSkills' && <Experiences ExperienceRef={ExperienceRef} />}
-                {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
-                {activeSection === null && <div className=''></div>}
-                {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <img loading='lazy' className='w-[50%] m-auto' src={activeSection}></img>}
+        <div id='mainDiv' className="App w-full flex flex-col bg-[#24292E] min-h-[100vh]">
+            <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
+            <div className='flex flex-row max-sm:flex-col max-sm:w-[100%]'>
+                <Explorer refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />
+                <div className='max-sm:w-[100%] flex flex-col max-sm:overflow-y-scroll '>
+                    <ActiveTabs SwitchTabs={SwitchTabs} tabs={activeTabs} activeSection={activeSection} deleteSection={deleteSection} />
+                    {activeSection === 'Home' && <Homepage SwitchTabs={SwitchTabs} HomeRef={HomeRef} />}
+                    {activeSection === 'About' && < About AboutRef={AboutRef} />}
+                    {activeSection === 'ExperienceAndSkills' && <Experiences ExperienceRef={ExperienceRef} />}
+                    {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
+                    {activeSection === null && <div className=''></div>}
+                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex flex-1'>
+                        <img loading='lazy' className=' w-[20rem] m-auto' src={activeSection}></img></div>}
 
+                </div>
             </div>
 
         </div >
