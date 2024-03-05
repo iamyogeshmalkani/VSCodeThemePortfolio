@@ -9,6 +9,7 @@ import ActiveTabs from './componets/activeTabs';
 import ContactForm from "./componets/contactMe"
 import SearchBarInput from './componets/searchBarInput';
 import { IMAGEEXTENSIONS } from './componets/Constants';
+import Bottom from './componets/bottom';
 
 function App() {
     const [activeSection, setActiveSection] = useState('Home');
@@ -24,7 +25,7 @@ function App() {
     const refs = {
         'Home': HomeRef,
         'About': AboutRef,
-        'ExperienceAndSkills': ExperienceRef,
+        'Experience': ExperienceRef,
         'Contact': ContactRef
     }
 
@@ -75,22 +76,22 @@ function App() {
     }, []);
 
     return (
-        <div id='mainDiv' className="App w-full flex flex-col bg-[#24292E] min-h-[100vh]">
+        <div id='mainDiv' className="App w-full flex flex-col bg-[#24292E] h-[100vh] overflow-y-auto ">
             <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
-            <div className='flex flex-row max-sm:flex-col max-sm:w-[100%]'>
+            <div className='flex flex-row max-sm:flex-col max-sm:w-[100%] h-full pb-[2rem]'>
                 <Explorer refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />
                 <div className='max-sm:w-[100%] flex flex-col max-sm:overflow-y-scroll '>
                     <ActiveTabs SwitchTabs={SwitchTabs} tabs={activeTabs} activeSection={activeSection} deleteSection={deleteSection} />
                     {activeSection === 'Home' && <Homepage SwitchTabs={SwitchTabs} HomeRef={HomeRef} />}
                     {activeSection === 'About' && < About AboutRef={AboutRef} />}
-                    {activeSection === 'ExperienceAndSkills' && <Experiences ExperienceRef={ExperienceRef} />}
+                    {activeSection === 'Experience' && <Experiences ExperienceRef={ExperienceRef} />}
                     {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
                     {activeSection === null && <div className=''></div>}
-                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex flex-1'>
-                        <img loading='lazy' className=' w-[20rem] m-auto' src={activeSection}></img></div>}
-
+                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex  flex-1'>
+                        <img loading='lazy' className='w-[20rem] m-auto' src={activeSection}></img></div>}
                 </div>
             </div>
+            <Bottom />
 
         </div >
     );

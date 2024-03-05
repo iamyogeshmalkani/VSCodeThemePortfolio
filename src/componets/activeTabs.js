@@ -5,7 +5,7 @@ import { BsImage } from 'react-icons/bs'
 
 export default function ActiveTabs({ SwitchTabs, tabs, activeSection, deleteSection }) {
     return (
-        <div className='flex flex-row flex-wrap  z-50 max-sm:hidden h-fit w-[82vw]'>
+        <div className='flex flex-row flex-wrap  z-50 max-sm:hidden h-fit'>
             {
                 tabs.map((tab) => {
                     return (
@@ -15,7 +15,7 @@ export default function ActiveTabs({ SwitchTabs, tabs, activeSection, deleteSect
                             <div
                                 onClick={() => { SwitchTabs(tab) }}
                                 className='flex flex-row items-center gap-2'>
-                                {!IMAGEEXTENSIONS.some(extension => tab.includes(extension)) ? <p className='text-p-300'>JS</p> : <BsImage className='text-sm text-purple-200' />}
+                                {!IMAGEEXTENSIONS.some(extension => tab.includes(extension)) ? <img src='JsLogo.png' className='h-4'></img> : <BsImage className='text-sm text-purple-200' />}
                                 <p >{tab}{!IMAGEEXTENSIONS.some(extension => tab.includes(extension)) ? '.js' : ''}</p>
                             </div>
                             <VscClose onClick={() => { deleteSection(tab) }} className=' text-white font-bold text-xl rounded-lg hover:bg-white hover:bg-opacity-10' />

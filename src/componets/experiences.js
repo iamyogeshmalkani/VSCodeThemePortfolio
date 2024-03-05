@@ -2,15 +2,16 @@
 import React from 'react'
 import JourneyBar from './experienceJourneyPath'
 import { JOBS } from './Constants'
+import { Carousel } from '@trendyol-js/react-carousel'
 
 export default function Experiences({ ExperienceRef }) {
     return (
-        <div ref={ExperienceRef} className='px-10 max-sm:px-5 animate-[fadeIn_1s_forwards] transition-all  flex flex-col gap-20 max-sm:gap-10 pt-[100px] ' >
-            <div className='w-full flex max-md:flex-col max-sm:gap-[50px] justify-between'>
+        <div ref={ExperienceRef} className='px-10 max-sm:px-5 animate-[fadeIn_1s_forwards] transition-all  flex flex-col gap-20 max-sm:gap-10 pt-[100px] overflow-x-scroll ' >
+            <div className=' flex max-md:flex-col max-sm:gap-[50px] justify-between'>
                 {/* <Skills /> */}
                 <div className=' flex flex-col flex-wrap gap-10 max-md:gap-4 w-[100%] max-md:w-[100%] float-right justify-center py-5 '>
                     <p className='text-4xl  text-white font-bold text-left pr-4 border-b-8 border-b-p-300 w-fit'>Experiences</p>
-                    <div className='w-full flex flex-row flex-wrap gap-10 '>
+                    <div className=' flex flex-row flex-wrap gap-10 overflow-x-scroll'>
                         {JOBS.map((job, ind) => {
                             return (
                                 <>
@@ -24,6 +25,6 @@ export default function Experiences({ ExperienceRef }) {
             </div>
 
 
-        </div>
+        </div >
     )
 }

@@ -47,13 +47,14 @@ let SKILLS = {
 let FILES = [
     "Home",
     "About",
-    "ExperienceAndSkills",
+    "Experience",
     "Contact",
 ]
 let ASSETS = [
     "contact-me.jpeg",
     "VsCodeLogo.ico",
-    "Yogesh.jpeg"
+    "Yogesh.jpeg",
+    "JsLogo.png"
 ]
 
 const IMAGEEXTENSIONS = ['gif', 'ico', 'png', 'jpeg', 'webp', 'jpg'];
