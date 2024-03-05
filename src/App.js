@@ -87,8 +87,9 @@ function App() {
                     {activeSection === 'Experience' && <Experiences ExperienceRef={ExperienceRef} />}
                     {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
                     {activeSection === null && <div className=''></div>}
-                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex  flex-1'>
-                        <img loading='lazy' className='w-[20rem] m-auto' src={activeSection}></img></div>}
+                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex flex-row gap-5 px-10 flex-1 max-sm:flex-col mt-10 items-center w-[80vw] h-full'>
+                        <img loading='lazy' className='w-[20rem] m-auto' src={activeSection}></img>
+                    </div>}
                 </div>
             </div>
             <Bottom />
