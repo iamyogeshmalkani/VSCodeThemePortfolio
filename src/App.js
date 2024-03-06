@@ -76,7 +76,7 @@ function App() {
     }, []);
 
     return (
-        <div id='mainDiv' className="App w-full flex flex-col bg-[#24292E] h-full ">
+        <div id='mainDiv' className="w-full flex flex-col bg-[#24292E] h-full">
             <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
             <div className='flex flex-row  max-sm:flex-col max-sm:w-[100%] pb-[2rem] h-full overflow-y-hidden'>
                 <Explorer refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />

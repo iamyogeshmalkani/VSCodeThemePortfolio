@@ -19,7 +19,8 @@ code {
 
 
 #root {
-    height: 100vh;
+    min-height: 100vh;
+    background-color: #24292E;
 }
 
 ::-webkit-scrollbar {

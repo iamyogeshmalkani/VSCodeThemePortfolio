@@ -5,7 +5,7 @@ import { BsImage } from 'react-icons/bs'
 
 export default function ActiveTabs({ SwitchTabs, tabs, activeSection, deleteSection }) {
     return (
-        <div className='flex flex-row flex-wrap  z-50 max-sm:hidden h-fit'>
+        <div className='flex flex-row flex-wrap z-50 h-fit'>
             {
                 tabs.map((tab) => {
                     return (
