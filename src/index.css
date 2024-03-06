@@ -17,8 +17,13 @@ code {
         monospace;
 }
 
+
+#root {
+    height: 100vh;
+}
+
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
 }
 
 /* Track */

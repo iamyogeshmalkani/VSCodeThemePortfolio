@@ -76,11 +76,11 @@ function App() {
     }, []);
 
     return (
-        <div id='mainDiv' className="App w-full flex flex-col bg-[#24292E] h-[100vh] overflow-y-auto ">
+        <div id='mainDiv' className="App w-full flex flex-col bg-[#24292E] h-full ">
             <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
-            <div className='flex flex-row max-sm:flex-col max-sm:w-[100%] h-full pb-[2rem]'>
+            <div className='flex flex-row  max-sm:flex-col max-sm:w-[100%] pb-[2rem] h-full overflow-y-hidden'>
                 <Explorer refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />
-                <div className='max-sm:w-[100%] flex flex-col max-sm:overflow-y-scroll '>
+                <div className='max-sm:w-[100%] flex flex-1 items-stretch flex-col'>
                     <ActiveTabs SwitchTabs={SwitchTabs} tabs={activeTabs} activeSection={activeSection} deleteSection={deleteSection} />
                     {activeSection === 'Home' && <Homepage SwitchTabs={SwitchTabs} HomeRef={HomeRef} />}
                     {activeSection === 'About' && < About AboutRef={AboutRef} />}
