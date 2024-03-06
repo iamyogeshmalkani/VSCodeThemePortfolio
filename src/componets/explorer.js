@@ -20,7 +20,7 @@ export default function Explorer({ refs, SwitchTabs, activeSection }) {
                         return (
                             <div className='flex flex-row gap-1 items-center'>
                                 <BsImage className='h-4 text-purple-200' />
-                                <p className={`text-[1vw]  flex flex-row gap-2 items-center cursor-pointer break-words overflow-x-clip hover:bg-white hover:bg-opacity-10 max-sm:text-lg px-2 ${activeSection === asset ? 'bg-[white] bg-opacity-10' : ''} `}
+                                <p className={`flex flex-row gap-2 items-center cursor-pointer break-words overflow-x-clip hover:bg-white hover:bg-opacity-10 text-[1rem] px-2 ${activeSection === asset ? 'bg-[white] bg-opacity-10' : ''} `}
                                     onClick={() => { SwitchTabs(asset) }
                                     }>{asset}
                                 </p>
@@ -36,7 +36,7 @@ export default function Explorer({ refs, SwitchTabs, activeSection }) {
                         return (
                             <div className='flex flex-row gap-1 items-center'>
                                 <img className='h-4' src='JsLogo.png' />
-                                <p className={`text-[1vw] overflow-x-clip bg-clip-text  cursor-pointer break-words hover:bg-white hover:bg-opacity-10 max-sm:text-lg px-2 ${activeSection === file ? 'bg-[white] bg-opacity-10' : ''} `} onClick={() => SwitchTabs(file)}>{file}.
+                                <p className={` overflow-x-clip bg-clip-text  cursor-pointer break-words hover:bg-white hover:bg-opacity-10 text-[1rem] px-2 ${activeSection === file ? 'bg-[white] bg-opacity-10' : ''} `} onClick={() => SwitchTabs(file)}>{file}.
                                     <span className='text-p-300'>js</span>
                                 </p>
                             </div>
