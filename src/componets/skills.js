@@ -14,7 +14,7 @@ export default function Skills() {
     }
     return (
         <div className='w-[40%]  max-md:w-[100%] flex flex-col gap-10'>
-            <p className='text-4xl  text-white font-bold text-left pr-4 border-b-8 border-b-p-300 w-fit'>Skills</p>
+            <p className='text-[5rem]  text-white font-bold text-left pr-4 border-b-8 border-b-p-300 w-fit'>Skills</p>
             <div className=' flex flex-row flex-wrap gap-4 mt-10 h-fit text-left '>
 
                 {

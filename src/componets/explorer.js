@@ -9,9 +9,9 @@ export default function Explorer({ refs, SwitchTabs, activeSection }) {
     return (
         <div className='bg-[#1F2428] min-w-[17%] max-sm:w-[100%] max-sm:text-center max-sm:relative border-r-[1px]  max-sm:h-fit max-sm:border-none border-r-gray-500  flex flex-col  items-left px-5 max-sm:px-0 max-md:px-2 text-[white]'>
             <p
-                className={`py-[0.5]  max-sm:w-[100%] text-xl hover:bg-white hover:bg-opacity-10 cursor-pointer flex flex-row gap-2 items-center text-[1.5vw]  w-full `} onClick={() => setIsOpen(!isopen)}>
-                {isopen ? <AiOutlineDown className='animate-[fadeIn_1s_forwards] text-white max-md:text-xl max-md:text-white' />
-                    : <AiOutlineRight className='animate-[fadeIn_1s_forwards] text-white max-md:text-xl max-md:text-white' />}Explorer
+                className={`py-[0.5]  max-sm:w-[100%] text-[1.3rem] hover:bg-white hover:bg-opacity-10 cursor-pointer flex flex-row gap-2 items-center w-full `} onClick={() => setIsOpen(!isopen)}>
+                {isopen ? <AiOutlineDown className='animate-[fadeIn_1s_forwards] text-white text-[1.5rem] max-md:text-white' />
+                    : <AiOutlineRight className='animate-[fadeIn_1s_forwards] text-white text-[1.5rem] max-md:text-white' />}Explorer
             </p>
             <div className='animate-[fadeIn_1s_forwards] ml-6  flex flex-col flex-wrap max-sm:flex-row max-md:gap-2 max-sm:mt-2 max-sm:ml-4 text-left w-[80%] max-sm:w-[90%] '>
 

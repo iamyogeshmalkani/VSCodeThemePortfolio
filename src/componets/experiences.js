@@ -9,7 +9,9 @@ export default function Experiences({ ExperienceRef }) {
             <div className=' flex max-md:flex-col max-sm:gap-[50px] justify-between'>
                 {/* <Skills /> */}
                 <div className=' flex flex-col flex-wrap gap-10 max-md:gap-4 w-[100%] max-md:w-[100%] float-right justify-center py-5 '>
-                    <p className='text-4xl  text-white font-bold text-left pr-4 border-b-8 border-b-p-300 w-fit'>Experiences</p>
+                    <p className='text-[3.5rem] font-bold text-white'>
+                        <span className='text-[3rem] font-bold  border-b-8 border-b-p-300'>Experiences</span>
+                    </p>
                     <div className=' flex flex-row flex-wrap gap-10'>
                         {JOBS.map((job, ind) => {
                             return (

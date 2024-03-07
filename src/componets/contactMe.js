@@ -36,7 +36,9 @@ const ContactForm = ({ ContactRef }) => {
                 <img loading='lazy' className='border-2 rounded-[50%] p-2' alt='contact' src="/contact-me.jpeg" ></img>
             </div>
             <form onSubmit={handleSubmit} ref={ContactRef} className='flex flex-col gap-2 flex-auto max-sm:w-[100%]'>
-                <p className='text-4xl my-5 w-fit text-white pr-3 text-left border-b-8 font-bold border-p-300'>Contact Me</p>
+                <p className='text-[3.5rem] font-bold text-white'>
+                    <span className='text-[3rem] font-bold  border-b-8 border-b-p-300'>About</span> Me
+                </p>
                 <input
                     type="text"
                     className='p-2 bg-[transparent] rounded-lg placeholder:text-gray-300 text-gray-300  border border-white'

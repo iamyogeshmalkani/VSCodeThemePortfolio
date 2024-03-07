@@ -9,9 +9,9 @@ export default function Homepage({ SwitchTabs, HomeRef }) {
             <div className='px-10 max-sm:px-5  flex flex-row max-sm:flex-col   justify-between max-sm:justify-start max-sm:gap-[50px]  animate-[fadeIn_1s_forwards]  pt-[100px] max-sm:py-[20px]  max-md:mt-[5vh] max-md:mb-[5vh]'>
                 <div className=' text-white w-[100%]  max-md:px-[5%] flex flex-col gap-4 text-left max-sm:w-[100%] '>
                     <p>Hi, my name is</p>
-                    <p className=' text-6xl max-sm:text-4xl font-bold  animate-[leftToRight_1.5s_forwards] '>Yogesh {''}
+                    <p className='text-[3.5rem] font-bold  animate-[leftToRight_1.5s_forwards] '>Yogesh {''}
                         <span className='text-p-300   pt-2 overflow-x-hidden '>Malkani.</span></p>
-                    <p className=' text-4xl max-sm:text-2xl max-md:w-full flex flex-row  text-gray-600 animate-[leftToRight_3.5s_forwards] '>
+                    <p className='text-[2.5rem] max-sm:text-2xl max-md:w-full flex flex-row  text-gray-600 animate-[leftToRight_3.5s_forwards] '>
                         <Typewriter
                             options={{
                                 strings: ['Web Developer', 'Mobile Developer', 'Backend Developer'],
@@ -22,7 +22,7 @@ export default function Homepage({ SwitchTabs, HomeRef }) {
                         />
                     </p>
                     <div className='flex gap-4'>
-                        <button onClick={() => { SwitchTabs('About') }} className='p-2 flex-auto bg-[#E0D5BE] rounded-lg text-black font-bold' >About Me</button>
+                        <button onClick={() => { SwitchTabs('About') }} className='p-2 flex-auto bg-[#E0D5BE] rounded-lg text-black font-bold text-[1.2rem]' >About Me</button>
 
                     </div>
                     <div className='flex flex-row gap-5 mt-5 max-md:mt-3'>

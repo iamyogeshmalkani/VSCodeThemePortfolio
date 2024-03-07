@@ -76,18 +76,18 @@ function App() {
     }, []);
 
     return (
-        <div id='mainDiv' className="w-full flex flex-col bg-[#24292E] h-full">
+        <div id='mainDiv' className="w-full flex flex-col bg-[#24292E] h-full flex-grow">
             <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
-            <div className='flex flex-row  max-sm:flex-col max-sm:w-[100%] pb-[2rem] h-full overflow-y-hidden'>
+            <div className='flex flex-row max-sm:flex-col max-sm:w-[100%] pb-[2rem] h-full overflow-y-hidden flex-grow'>
                 <Explorer refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />
-                <div className='max-sm:w-[100%] flex flex-1 items-stretch flex-col'>
+                <div className='max-sm:w-[100%] flex  items-stretch flex-col flex-grow'>
                     <ActiveTabs SwitchTabs={SwitchTabs} tabs={activeTabs} activeSection={activeSection} deleteSection={deleteSection} />
                     {activeSection === 'Home' && <Homepage SwitchTabs={SwitchTabs} HomeRef={HomeRef} />}
                     {activeSection === 'About' && < About AboutRef={AboutRef} />}
                     {activeSection === 'Experience' && <Experiences ExperienceRef={ExperienceRef} />}
                     {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
                     {activeSection === null && <div className=''></div>}
-                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex flex-row gap-5 px-10 flex-1 max-sm:flex-col mt-10 items-center w-[80vw] h-full'>
+                    {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex flex-row gap-5 px-10 max-sm:flex-col mt-10 items-center h-full '>
                         <img loading='lazy' className='w-[20rem] m-auto' src={activeSection}></img>
                     </div>}
                 </div>

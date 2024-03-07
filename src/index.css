@@ -21,10 +21,12 @@ code {
 #root {
     min-height: 100vh;
     background-color: #24292E;
+    display: flex;
+    flex-direction: column;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
 }
 
 /* Track */
