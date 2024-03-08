@@ -33,11 +33,11 @@ const ContactForm = ({ ContactRef }) => {
         <div className='flex flex-row gap-5 px-10 flex-1 max-sm:flex-col mt-10 items-center '>
             <ToastContainer />
             <div className='max-w-[45%] max-sm:w-[100%]  mt-10 max-sm:mt-1'>
-                <img loading='lazy' className='border-2 rounded-[50%] p-2' alt='contact' src="/contact-me.jpeg" ></img>
+                <img loading='lazy' className='border-2 rounded-[50%] p-2' alt='contact' src="/contact.jpeg" ></img>
             </div>
             <form onSubmit={handleSubmit} ref={ContactRef} className='flex flex-col gap-2 flex-auto max-sm:w-[100%]'>
-                <p className='text-[3.5rem] font-bold text-white'>
-                    <span className='text-[3rem] font-bold  border-b-8 border-b-p-300'>About</span> Me
+                <p className='text-[2.8rem] font-bold text-white'>
+                    <span className='text-[2.5rem] font-bold  border-b-8 border-b-p-300'>Contact</span> Me
                 </p>
                 <input
                     type="text"

@@ -49,14 +49,36 @@ let FILES = [
     "About",
     "Experience",
     "Contact",
+    "Projects"
 ]
 let ASSETS = [
-    "contact-me.jpeg",
-    "VsCodeLogo.ico",
+    "contact.jpeg",
+    "VsLogo.ico",
     "Yogesh.jpeg",
     "JsLogo.png"
 ]
 
+let PROJECTS = [
+    {
+        title: "VsCodeThemePortfolio",
+        description: "This is a web portfolio that is inspired by the Ui Ux of Vs Code Editor",
+        image: "Project1.png",
+        skills: ["React", "Tailwind Css", "Email Js"]
+    },
+    {
+        title: "HealthCare App",
+        description: "A cross platform mobile application that helps patients take there medicines on time.",
+        image: "Project2.svg",
+        skills: ["React Native"]
+    },
+    {
+        title: "Astrology Website",
+        description: "Website made for a client.",
+        image: "Project3.png",
+        skills: ["React Js", "Node js", "Tailwind Css", "SEO"]
+    }
+]
+
 const IMAGEEXTENSIONS = ['gif', 'ico', 'png', 'jpeg', 'webp', 'jpg'];
 
-export { JOBS, SKILLS, FILES, ASSETS, IMAGEEXTENSIONS }
+export { JOBS, SKILLS, FILES, ASSETS, IMAGEEXTENSIONS, PROJECTS }

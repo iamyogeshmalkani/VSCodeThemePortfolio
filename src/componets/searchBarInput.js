@@ -35,7 +35,7 @@ export default function SearchBarInput({ setSearchBar, SwitchTabs, show }) {
     return (
         <div className=' flex flex-row gap-5 max-md:flex-col items-center text-white pl-2'>
             <div className='flex flex-row gap-4 mt-1'>
-                <img src='VsCodeLogo.ico' className='h-5 cursor-pointer' />
+                <img src='VsLogo.ico' className='h-5 cursor-pointer' />
                 <p className='cursor-pointer max-sm:text-xs'>File</p>
                 <p className='cursor-pointer max-sm:text-xs'>Edit</p>
                 <p className='cursor-pointer max-sm:text-xs'>View</p>
