@@ -87,7 +87,7 @@ function App() {
                     {activeSection === 'About' && < About AboutRef={AboutRef} />}
                     {activeSection === 'Experience' && <Experiences ExperienceRef={ExperienceRef} />}
                     {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
-                    {activeSection === 'Projects' && <Projects />}
+                    {/* {activeSection === 'Projects' && <Projects />} */}
                     {activeSection === null && <div className=''></div>}
                     {IMAGEEXTENSIONS.some(extension => activeSection?.includes(extension)) && <div className='flex flex-row gap-5 px-10 max-sm:flex-col mt-10 items-center h-full '>
                         <img loading='lazy' className='w-[20rem] m-auto' src={activeSection}></img>
