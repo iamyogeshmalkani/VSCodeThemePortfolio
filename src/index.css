@@ -26,17 +26,18 @@ code {
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #24292E;
+    background: #1d2225;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #e4e3e3;
+    opacity: 0.2 !;
 }
 
 /* Handle on hover */

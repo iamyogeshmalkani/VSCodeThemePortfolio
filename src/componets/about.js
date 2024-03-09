@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function About({ AboutRef }) {
     return (
-        <div ref={AboutRef} className=' px-10 w-full animate-[fadeIn_1s_forwards]  text-white pt-[2rem] flex flex-col max-md:px-5 '>
+        <div ref={AboutRef} className=' px-10 w-full animate-[fadeIn_1s_forwards]  text-white pt-[2rem] max-sm:pt-0 flex flex-col max-md:px-5 '>
             <div className=' w-full  flex items-start max-md:flex-col '>
                 <div className='w-[60%] max-md:w-[100%] text-left flex flex-col gap-10 z-1'>
                     <p className='text-[2.8rem] font-bold'>

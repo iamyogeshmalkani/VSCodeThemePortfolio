@@ -4,7 +4,7 @@ import Project from './project'
 
 export default function Projects() {
     return (
-        <div className='px-10 w-full transition-all animate-[fadeIn_1s_forwards] text-white pt-[2rem] flex flex-col max-md:px-5 '>
+        <div className='px-10 w-full transition-all animate-[fadeIn_1s_forwards] text-white pt-[2rem] max-sm:pt-0 flex flex-col max-md:px-5 '>
             <p className='text-[3.5rem] font-bold'>
                 <span className='text-[3rem] font-bold  border-b-8 border-b-p-300'>Projects</span>
             </p>

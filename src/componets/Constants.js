@@ -1,7 +1,7 @@
 const JOBS = [
     {
         company: 'PillUp',
-        duration: { start: 'May 2023', end: 'July 2023' },
+        duration: { start: 'May 2023', end: 'present' },
         title: "Software Developer",
         skills: ['React js', 'Tailwind', 'React Native', "Node js", "Fast Api"],
 
