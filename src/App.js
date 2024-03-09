@@ -88,7 +88,7 @@ function App() {
                     {activeSection === 'About' && <About AboutRef={AboutRef} />}
                     {activeSection === 'Experience' && <Experiences ExperienceRef={ExperienceRef} />}
                     {activeSection === 'Contact' && <ContactForm ContactRef={ContactRef} />}
-                    {activeSection === 'Projects' && <Projects />}
+                    {/* {activeSection === 'Projects' && <Projects />} */}
                     {!activeSection && <div className='w-full h-full flex flex-row justify-center items-center'>
                         <img className='w-[20rem]' src='landing.png' />
                     </div>}
