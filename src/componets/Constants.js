@@ -63,18 +63,21 @@ let PROJECTS = [
         title: "VsCodeThemePortfolio",
         description: "This is a web portfolio that is inspired by the Ui Ux of Vs Code Editor",
         image: "Project1.png",
-        skills: ["React", "Tailwind Css", "Email Js"]
+        skills: ["React", "Tailwind Css", "Email Js"],
+        link: "https://yogeshmalkani.vercel.app"
     },
     {
         title: "HealthCare App",
         description: "A cross platform mobile application that helps patients take there medicines on time.",
         image: "Project2.svg",
-        skills: ["React Native"]
+        skills: ["React Native"],
+        link: "https://play.google.com/store/apps/details?id=com.pillup"
     },
     {
         title: "Astrology Website",
         description: "Website made for a client.",
         image: "Project3.png",
+        link: "https://astrologerdeepagupta.com",
         skills: ["React Js", "Node js", "Tailwind Css", "SEO"]
     }
 ]

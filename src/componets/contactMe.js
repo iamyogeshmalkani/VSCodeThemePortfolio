@@ -66,7 +66,7 @@ const ContactForm = ({ ContactRef }) => {
                     onChange={handleChange}
                     required
                 ></textarea>
-                <button type="submit" className='bg-p-300 rounded-lg p-2 text-white font-bold'>Send Message</button>
+                <button type="submit" className='border hover:bg-white hover:delay-100 hover:text-black rounded-lg p-2 text-white font-bold'>Send Message</button>
             </form>
 
 

@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function About({ AboutRef }) {
     return (
-        <div ref={AboutRef} className=' px-10 w-full animate-[fadeIn_1s_forwards]  text-white pt-[100px] flex flex-col max-md:px-5 '>
+        <div ref={AboutRef} className=' px-10 w-full animate-[fadeIn_1s_forwards]  text-white pt-[2rem] flex flex-col max-md:px-5 '>
             <div className=' w-full  flex items-start max-md:flex-col '>
-                <div className='w-[60%] max-md:w-[100%] text-left flex flex-col gap-10'>
+                <div className='w-[60%] max-md:w-[100%] text-left flex flex-col gap-10 z-1'>
                     <p className='text-[2.8rem] font-bold'>
                         <span className='text-[2.5rem] font-bold  border-b-8 border-b-p-300'>About</span> Me</p>
                     <p>
@@ -17,8 +17,8 @@ export default function About({ AboutRef }) {
 
                     </p>
                 </div>
-                <div className='w-[40%] m-auto max-sm:w-[60%]'>
-                    <img loading='lazy' alt='my-image' src="https://static.vecteezy.com/system/resources/previews/011/153/369/original/3d-web-developer-working-on-project-illustration-png.png" className='h-full object-contain'></img>
+                <div className='w-[30%] m-auto max-md:w-[60%] max-md:fixed max-md:left-[15%] max-md:opacity-30 z-0'>
+                    <img loading='lazy' alt='my-image' src="about.jpg" className='h-full object-contain border-2 p-2 '></img>
                 </div>
             </div>
         </div >

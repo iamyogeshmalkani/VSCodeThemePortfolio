@@ -5,8 +5,8 @@ import { JOBS } from './Constants'
 
 export default function Experiences({ ExperienceRef }) {
     return (
-        <div ref={ExperienceRef} className='px-10 max-sm:px-5 animate-[fadeIn_1s_forwards] transition-all  flex flex-col gap-20 max-sm:gap-10 pt-[50px] overflow-y-scroll' >
-            <div className=' flex max-md:flex-col max-sm:gap-[50px] justify-between'>
+        <div ref={ExperienceRef} className='px-10 max-sm:px-5 animate-[fadeIn_1s_forwards] transition-all  flex flex-col gap-20 max-sm:gap-10 pt-[2rem] overflow-y-scroll' >
+            <div className='flex max-md:flex-col max-sm:gap-[50px] justify-between'>
                 {/* <Skills /> */}
                 <div className=' flex flex-col flex-wrap gap-10 max-md:gap-4 w-[100%] max-md:w-[100%] float-right justify-center py-5 '>
                     <p className=' font-bold text-white'>

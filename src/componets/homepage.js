@@ -22,7 +22,7 @@ export default function Homepage({ SwitchTabs, HomeRef }) {
                         />
                     </p>
                     <div className='flex gap-4'>
-                        <button onClick={() => { SwitchTabs('About') }} className='p-2 flex-auto bg-[#E0D5BE] rounded-lg text-black font-bold text-[1.2rem]' >About Me</button>
+                        <button onClick={() => { SwitchTabs('About') }} className='p-2 flex-auto border rounded-lg text-white font-bold text-[1.2rem] hover:text-black hover:bg-white hover:delay-100' >About Me</button>
 
                     </div>
                     <div className='flex flex-row gap-5 mt-5 max-md:mt-3'>
