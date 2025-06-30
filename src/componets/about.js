@@ -9,16 +9,16 @@ export default function About({ AboutRef }) {
                     <p className='text-[2.8rem] font-bold'>
                         <span className='text-[2.5rem] font-bold  border-b-8 border-b-p-300'>About</span> Me</p>
                     <p>
-                        Welcome to my web portfolio! I'm Yogesh Malkani, a passionate B.Tech IT graduate with a deep interest in software development. Over the past 3 years, I have dedicated myself to Web and Mobile app development and have had the opportunity to work with 3 startups, gaining valuable experience and expanding my knowledge in various technologies.
-                        <br />
-                        <br />
-
-                        As a full-stack developer, my tech stack is primarily based on JavaScript, which allows me to seamlessly work on both the front end and back end of web applications. While my strength lies in front-end development, I am continuously striving to enhance my skills in backend technologies.Currently, i am exploring android and ios development using flutter and Swift.
+                        Hey, I’m Yogesh Malkani — a software engineer with over 2 years of experience working on both web and mobile applications.
+                        <br /><br />
+                        I’ve been involved in building user-friendly products from scratch and enjoy every part of the process — from solving complex problems to polishing the final user experience. Lately, I’ve been exploring iOS development, and it's been an exciting journey learning how to build for Apple’s ecosystem.
+                        <br /><br />
+                        I’m always curious, always learning, and love turning ideas into things people can actually use.
 
                     </p>
                 </div>
                 <div className='w-[30%] m-auto max-md:w-[60%] max-md:fixed max-md:left-[15%] max-md:opacity-30 z-0'>
-                    <img loading='lazy' alt='my-image' src="about.jpg" className='h-full object-contain border-2 p-2 '></img>
+                    <img loading='lazy' alt='my-image' src="about.webp" className='h-full object-contain rounded-lg'></img>
                 </div>
             </div>
         </div >

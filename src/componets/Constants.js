@@ -1,7 +1,14 @@
 const JOBS = [
     {
+        company: 'Jolt',
+        duration: { start: 'Jan 2024', end: 'present' },
+        title: "Software Engineer",
+        skills: ['React js', 'Next js', 'Swiftui'],
+
+    },
+    {
         company: 'PillUp',
-        duration: { start: 'May 2023', end: 'present' },
+        duration: { start: 'May 2023', end: 'Jan 2024' },
         title: "Software Developer",
         skills: ['React js', 'Tailwind', 'React Native', "Node js", "Fast Api"],
 

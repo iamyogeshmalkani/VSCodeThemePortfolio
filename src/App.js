@@ -10,7 +10,6 @@ import ContactForm from "./componets/contactMe"
 import SearchBarInput from './componets/searchBarInput';
 import { IMAGEEXTENSIONS } from './componets/Constants';
 import Bottom from './componets/bottom';
-import Projects from './componets/projects';
 
 function App() {
     const [activeSection, setActiveSection] = useState();
@@ -23,12 +22,7 @@ function App() {
     let ContactRef = useRef();
 
 
-    const refs = {
-        'Home': HomeRef,
-        'About': AboutRef,
-        'Experience': ExperienceRef,
-        'Contact': ContactRef
-    }
+
 
     const SwitchTabs = useCallback((section) => {
         setActiveSection(section)
@@ -75,13 +69,12 @@ function App() {
         document.onmousedown = handleMouseDown;
         document.addEventListener('visibilitychange', handleVisibilityChange);
     }, []);
-    console.log(activeSection)
 
     return (
         <div id='mainDiv' className="w-full flex flex-col bg-[#1d2225] h-full flex-grow">
             <SearchBarInput setSearchBar={setSearchBar} SwitchTabs={SwitchTabs} show={searchBar} />
             <div className='flex flex-row max-sm:flex-col max-sm:w-[100%] pb-[2rem] h-full overflow-y-hidden flex-grow'>
-                <Explorer refs={refs} SwitchTabs={SwitchTabs} activeSection={activeSection} />
+                <Explorer SwitchTabs={SwitchTabs} activeSection={activeSection} />
                 <div className='max-sm:w-[100%] flex  items-stretch flex-col flex-grow'>
                     <ActiveTabs SwitchTabs={SwitchTabs} tabs={activeTabs} activeSection={activeSection} deleteSection={deleteSection} />
                     {activeSection === 'Home' && <Homepage SwitchTabs={SwitchTabs} HomeRef={HomeRef} />}

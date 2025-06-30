@@ -24,8 +24,8 @@ const ContactForm = ({ ContactRef }) => {
                 setFormData({ name: '', email: '', message: '' });
             })
             .catch((error) => {
-                console.error('An error occurred while sending the message:', error);
-                alert('An error occurred while sending the message.');
+                notify('An error occurred while sending the message.')
+
             });
     };
 
